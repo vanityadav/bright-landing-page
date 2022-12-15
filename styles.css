@@ -1,0 +1,259 @@
+@font-face {
+  font-family: GT Walsheim Pro;
+  src: url("./assets/fonts/GTWalsheimPro-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: GT Walsheim Pro;
+  src: url("./assets/fonts/GTWalsheimPro-Medium.woff2") format("woff2");
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: GT Walsheim Pro;
+  src: url("./assets/fonts/GTWalsheimPro-Bold.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: GT Walsheim Pro;
+  src: url("./assets/fonts/GTWalsheimPro-Black.woff2") format("woff2");
+  font-weight: 800;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: GT Walsheim Pro;
+  src: url("./assets/fonts/GTWalsheimPro-UltraBold.woff2") format("woff2");
+  font-weight: 900;
+  font-style: normal;
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: GT Walsheim Pro;
+}
+
+body {
+  width: 75%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 10em;
+
+  --pc: #fa5959;
+  --pbc: #f26b5b;
+  --pbg: white;
+}
+.primary-button {
+  font-weight: 500;
+  font-size: 1.25em;
+  padding: 0.95em 1.2em;
+  text-align: center;
+  color: var(--pbg);
+  background: var(--pbc);
+  border-radius: 0.3em;
+  border: none;
+  max-width: max-content;
+}
+#section-main-bg {
+  background-image: url("./assets/svg/homebase.svg");
+  width: 100%;
+  height: max-content;
+  background-repeat: no-repeat;
+  background-size: contain;
+  overflow: hidden;
+}
+#section-main {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+}
+#section-main header {
+  margin-block: 2.5em;
+}
+.hero-box {
+  display: flex;
+  justify-content: space-between;
+  min-height: 64vh;
+  gap: 2em;
+}
+.hero-box-right {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-top: 4em;
+}
+.hero-text {
+  color: var(--pbg);
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+.hero-text h1 {
+  font-size: 3.125em;
+  font-weight: 800;
+}
+.hero-text p {
+  font-size: 1.4em;
+  font-weight: 400;
+}
+
+.hero-box-left {
+  flex: 1;
+  height: 100%;
+  width: 100%;
+  position: relative;
+}
+.hero-left-image img {
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+}
+.hero-persons {
+  display: flex;
+  gap: 1em;
+  position: absolute;
+  top: 65%;
+  right: 2%;
+}
+.hero-graph {
+  height: 100%;
+  width: 100%;
+  transform: translate(4em, -4em) scale(200%);
+}
+.hero-person-info :first-child {
+  font-size: 1.4em;
+  font-weight: 700;
+}
+.hero-person-info :nth-child(2) {
+  font-size: 0.88em;
+  font-weight: 400;
+}
+.hero-akash .hero-person-info {
+  margin-left: 5em;
+  /* white-space: nowrap; */
+}
+
+/* Cards */
+/* Page */
+
+#section-cards-bg {
+  background-image: url("./assets/svg/cardbg.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+#section-cards {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  padding-block: 1em;
+}
+#section-cards h1 {
+  font-size: 3.125em;
+  font-weight: 800;
+  margin-bottom: 1em;
+}
+#section-cards h2 {
+  font-weight: 800;
+}
+.cards {
+  display: flex;
+  gap: 2em;
+  flex-wrap: wrap;
+  background-color: var(--pbg);
+}
+.card {
+  flex: 1;
+  display: flex;
+  min-width: 250px;
+  max-width: 300px;
+  flex-direction: column;
+  padding: 1em;
+  gap: 1em;
+  box-shadow: 0.1em 0.8em 1em rgba(101, 97, 125, 0.2);
+  border-radius: 0.8em;
+}
+.card-info {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+.card-info :first-child {
+  width: 65%;
+}
+.card-info span {
+  color: var(--pc);
+  font-weight: 800;
+}
+.card-info span,
+.card-info p {
+  font-size: 1.13em;
+}
+.card-image {
+  height: 100%;
+  width: 100%;
+}
+img[alt="card-image"] {
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+}
+#section-cards > h2 {
+  text-align: end;
+  padding-block: 1em;
+}
+
+#section-see-how {
+  background-image: url("./assets/svg/seehowbg.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.section-see-how-content {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+}
+.see-how-right {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+.see-how-content {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+.see-how-content h1 {
+  font-size: 3.125em;
+  font-weight: 800;
+}
+.see-how-content p {
+  font-size: 1.565em;
+}
+
+.see-how-mahajan .hero-person-info {
+  margin-left: 10em;
+}
+
+/*  */
+/*  */
+/*  */
+
+@media only screen and (max-width: 1440px) {
+  body {
+    width: 100%;
+  }
+  #section-main-bg {
+    overflow: unset;
+    height: 60em;
+  }
+}
